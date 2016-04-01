@@ -1,0 +1,25 @@
+{
+  "name": "dictionary",
+  "version": "1.0.0",
+  "description": "Fast and simply lookup for key-value store",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iprach/dictionary.git"
+  },
+  "keywords": [
+    "dictionary"
+  ],
+  "author": "Prach Hormanee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iprach/dictionary/issues"
+  },
+  "homepage": "https://github.com/iprach/dictionary#readme"
+}

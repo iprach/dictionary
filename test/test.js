@@ -22,8 +22,8 @@ describe('Dictionary Module', function() {
         });
         it('should return not same value if have same key and difference value store for each object.', function() {
             var key = 'test';
-            dic1.add(test, '1');
-            dic2.add(test, 2);
+            dic1.add(key, '1');
+            dic2.add(key, 2);
             assert.equal(dic1.get(key), '1');
             assert.equal(dic2.get(key), 2);
         });
@@ -137,12 +137,6 @@ describe('Dictionary Module', function() {
             try {
                 dic.del(function() {});
                 assert.equal(function() {}, 'string');
-            } catch (e) {
-                assert.equal(e.message, 'Key is not string');
-            }
-            try {
-                var value = dic.del('a');
-                assert.equal(value.b, 'b');
             } catch (e) {
                 assert.equal(e.message, 'Key is not string');
             }

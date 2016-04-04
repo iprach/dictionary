@@ -1,1 +1,1 @@
-require('./lib/dictionary.js');
+module.exports = require('./lib/dictionary.js');
